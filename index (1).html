@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Nasim | نسيم — مواقع احترافية للمقاهي والمطاعم والفنادق الصغيرة</title>
+<meta name="description" content="نسيم يصمم مواقع سريعة واحترافية وثنائية اللغة للمقاهي والمطاعم والفنادق الصغيرة — حضور رقمي يجعل عملاءك يثقون بك من أول نظرة.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nasim">
+<meta property="og:title" content="Nasim | نسيم — مواقع احترافية للمقاهي والمطاعم والفنادق الصغيرة">
+<meta property="og:description" content="نسيم يصمم مواقع سريعة واحترافية وثنائية اللغة للمقاهي والمطاعم والفنادق الصغيرة — حضور رقمي يجعل عملاءك يثقون بك من أول نظرة.">
+<meta property="og:image" content="https://nasim-agency.com/og-image.jpg">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23143850'/%3E%3Crect x='29' y='30' width='6' height='22' rx='2' fill='%23fff'/%3E%3Ccircle cx='32' cy='19' r='9' fill='%238FD3C4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#102B3B; --navy-dark:#081B27; --teal:#2E8B9E; --seafoam:#8FD3C4;
+    --teal-deep:#1C6472; --seafoam-tint:#E3F3EE;
+    --sand:#FAF9F5; --white:#FFFFFF; --text:#16242E; --text-soft:#5B6B74;
+    --border:#E2DED3;
+    --font-heading:'Cairo',sans-serif; --font-body:'Cairo',sans-serif;
+  }
+  body.lang-en{ --font-heading:'Fraunces',serif; --font-body:'Inter',sans-serif; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--sand);color:var(--text);font-family:var(--font-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3{font-family:var(--font-heading);}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 6vw;position:relative;z-index:1;}
+  .section{padding:130px 0;position:relative;overflow:hidden;}
+  .section-head{max-width:640px;margin-bottom:70px;}
+  .eyebrow{font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);font-weight:700;display:block;margin-bottom:20px;}
+  .section-title{font-size:clamp(28px,3.6vw,42px);font-weight:700;color:var(--navy);line-height:1.24;letter-spacing:-.01em;margin-bottom:20px;}
+  .section-sub{color:var(--text-soft);font-size:15.5px;line-height:1.8;}
+
+  /* color-blocked section variants */
+  .section-navy{background:var(--navy);}
+  .section-navy .eyebrow{color:var(--seafoam);}
+  .section-navy .section-title{color:#fff;}
+  .section-navy .section-sub{color:#AFC5CE;}
+
+  .section-teal{background:var(--teal-deep);position:relative;overflow:hidden;}
+  .section-teal .eyebrow{color:var(--seafoam);}
+  .section-teal .section-title{color:#fff;}
+  .section-teal .section-sub{color:#CFE7E2;}
+  .section-teal .service-row{border-top-color:rgba(255,255,255,.2);}
+  .section-teal .services-list .service-row:last-child{border-bottom-color:rgba(255,255,255,.2);}
+  .section-teal .service-row h3{color:#fff;}
+  .section-teal .service-row p{color:#CFE7E2;}
+  .section-teal .price-band{border-top-color:rgba(255,255,255,.25);}
+  .section-teal .price-band .amount{color:#fff;}
+  .section-teal .price-band p{color:#CFE7E2;}
+  .section-teal .contact-card{border-top-color:rgba(255,255,255,.22);}
+  .section-teal .contact-info .role{color:#CFE7E2;}
+  .section-teal .contact-links a{color:#fff;border-bottom-color:rgba(255,255,255,.22);}
+  .section-teal .contact-links a:hover{color:var(--seafoam);}
+  .section-navy .contact-card{border-top-color:rgba(255,255,255,.18);}
+  .section-navy .contact-info .role{color:#AFC5CE;}
+  .section-navy .contact-links a{color:#fff;border-bottom-color:rgba(255,255,255,.18);}
+  .section-navy .contact-links a:hover{color:var(--seafoam);}
+
+  .section-seafoamtint{background:var(--seafoam-tint);}
+  .section-seafoamtint .eyebrow{color:var(--teal-deep);}
+  .section-seafoamtint .process-step{border-top-color:rgba(16,43,59,.13);}
+  .section-seafoamtint .process-list .process-step:last-child{border-bottom-color:rgba(16,43,59,.13);}
+  .section-seafoamtint .step-icon{color:var(--teal-deep);}
+
+  /* logo */
+  .logo{display:flex;align-items:baseline;gap:2px;font-family:var(--font-heading);font-weight:800;color:var(--navy);direction:ltr;}
+  .breeze{display:inline-flex;align-items:center;margin-inline-start:6px;}
+  .breeze svg{width:22px;height:14px;}
+  .breeze path{stroke:var(--seafoam);stroke-width:2;fill:none;stroke-linecap:round;}
+  .breeze path:nth-child(1){animation:drift 3s ease-in-out infinite;}
+  .breeze path:nth-child(2){animation:drift 3s ease-in-out infinite .4s;}
+  .breeze path:nth-child(3){animation:drift 3s ease-in-out infinite .8s;}
+  @keyframes drift{0%,100%{opacity:.5;transform:translateX(0);}50%{opacity:1;transform:translateX(2px);}}
+  .logo .i-wrap{position:relative;display:inline-flex;align-items:flex-end;height:1em;}
+  .logo .stem{width:.13em;height:.55em;background:currentColor;border-radius:1px;}
+  .logo .bubble{position:absolute;top:-.06em;left:50%;transform:translateX(-50%);width:.32em;height:.32em;border-radius:50%;background:radial-gradient(circle at 30% 30%, var(--seafoam), var(--teal));box-shadow:0 1px 3px rgba(20,56,80,.35);}
+
+  /* nav */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(250,249,245,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);}
+  .nav-inner{max-width:1180px;margin:0 auto;padding:22px 6vw;display:flex;justify-content:space-between;align-items:center;direction:ltr;position:relative;}
+  .nav-left{display:flex;align-items:center;gap:22px;}
+  .logo{font-size:21px;}
+
+  /* loading screen */
+  #loadingScreen{position:fixed;inset:0;z-index:9999;background:var(--navy);display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s ease;}
+  #loadingScreen.hide{opacity:0;visibility:hidden;pointer-events:none;}
+  .loading-logo{font-size:48px;color:#fff;opacity:0;animation:loadingIn 1s ease forwards;}
+  .loading-logo .breeze svg{width:40px;height:25px;}
+  .loading-logo .breeze path{stroke-width:1.6;}
+  @keyframes loadingIn{0%{opacity:0;transform:scale(.9);}60%{opacity:1;transform:scale(1.02);}100%{opacity:1;transform:scale(1);}}
+  @media(max-width:480px){.loading-logo{font-size:34px;}.loading-logo .breeze svg{width:30px;height:19px;}}
+  .nav-links{display:flex;align-items:center;gap:38px;font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--text-soft);}
+  .nav-links a{position:relative;padding-bottom:4px;transition:color .2s;}
+  .nav-links a:hover{color:var(--navy);}
+  .nav-links a.active{color:var(--navy);}
+  .nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--navy);}
+  .lang-btn{border:none;border-bottom:1px solid var(--navy);color:var(--navy);background:transparent;padding:2px 0;font-size:12.5px;font-weight:700;letter-spacing:.03em;cursor:pointer;font-family:var(--font-body);flex-shrink:0;transition:color .2s,border-color .2s;}
+  .lang-btn:hover{color:var(--teal);border-color:var(--teal);}
+  .hamburger{display:none;background:none;border:none;font-size:22px;color:var(--navy);cursor:pointer;padding:4px 8px;}
+  @media(max-width:820px){
+    .nav-links{display:none;position:fixed;top:64px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:26px 6vw;border-bottom:1px solid var(--border);gap:22px;}
+    .nav-links.open{display:flex;}
+    .hamburger{display:block;}
+  }
+
+  /* hero */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:140px 0 90px;background:var(--navy);overflow:hidden;}
+  .aurora-bg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
+  .aurora-bg span{position:absolute;border-radius:50%;filter:blur(50px);opacity:.5;will-change:transform;}
+  .aurora-bg .b1{width:40vw;height:40vw;max-width:480px;max-height:480px;background:var(--teal);top:-12%;inset-inline-start:-10%;animation:auroraMove1 12s ease-in-out infinite alternate;}
+  .aurora-bg .b2{width:34vw;height:34vw;max-width:420px;max-height:420px;background:var(--seafoam);bottom:-14%;inset-inline-end:-8%;animation:auroraMove2 14s ease-in-out infinite alternate;}
+  .aurora-bg .b3{width:26vw;height:26vw;max-width:340px;max-height:340px;background:#2E90A8;top:32%;inset-inline-start:56%;animation:auroraMove3 10s ease-in-out infinite alternate;opacity:.4;}
+  .aurora-bg.compact .b1{width:32vw;height:32vw;max-width:340px;max-height:340px;opacity:.4;}
+  .aurora-bg.compact .b2{width:26vw;height:26vw;max-width:280px;max-height:280px;opacity:.36;}
+  .aurora-bg.compact .b3{width:20vw;height:20vw;max-width:220px;max-height:220px;opacity:.32;}
+  .aurora-bg.ghost .b1{opacity:.28;}
+  .aurora-bg.ghost .b2{opacity:.24;}
+  .aurora-bg.ghost .b3{opacity:.2;}
+  @keyframes auroraMove1{from{transform:translate(0,0) scale(1);}to{transform:translate(7vw,5vh) scale(1.15);}}
+  @keyframes auroraMove2{from{transform:translate(0,0) scale(1);}to{transform:translate(-6vw,-5vh) scale(1.12);}}
+  @keyframes auroraMove3{from{transform:translate(0,0) scale(1);}to{transform:translate(-5vw,6vh) scale(.9);}}
+  .hero-inner{position:relative;z-index:2;max-width:820px;}
+  .hero-kicker{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--seafoam);font-weight:700;margin-bottom:28px;direction:ltr;display:block;}
+  .hero h1{font-size:clamp(38px,6.4vw,72px);font-weight:700;line-height:1.12;letter-spacing:-.02em;color:#fff;margin-bottom:30px;}
+  .hero h1 span.accent{color:var(--seafoam);}
+  .hero p{font-size:18px;line-height:1.85;color:#B9CBD4;max-width:540px;margin-bottom:46px;}
+  .cta-row{display:flex;gap:20px;flex-wrap:wrap;align-items:center;}
+  .btn-primary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);padding:15px 32px;border-radius:50px;font-weight:700;font-size:14px;letter-spacing:.01em;display:inline-block;transition:background .25s,color .25s,border-color .25s;}
+  .btn-primary:hover{background:#fff;color:var(--navy);border-color:#fff;}
+  .btn-ghost{color:var(--navy);font-size:14.5px;font-weight:600;border-bottom:1px solid var(--border);padding-bottom:3px;display:inline-block;align-self:center;transition:border-color .2s,color .2s;}
+  .btn-ghost:hover{border-color:var(--navy);}
+
+  /* trust strip */
+  /* wave dividers: soft curved transitions between sections instead of hard lines */
+  .wave-divider{position:relative;height:64px;line-height:0;overflow:hidden;}
+  .wave-divider svg{display:block;width:100%;height:100%;}
+  @media(max-width:700px){.wave-divider{height:38px;}}
+
+  .trust-strip{background:var(--sand);display:flex;border-bottom:1px solid var(--border);flex-wrap:wrap;}
+  .trust-item{flex:1;min-width:220px;padding:20px 6vw;font-size:13px;color:var(--text-soft);border-inline-end:1px solid var(--border);display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.01em;}
+  .trust-item:last-child{border-inline-end:none;}
+  .dot-mark{width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0;}
+
+
+
+  /* work plates */
+  .work-grid{display:flex;flex-direction:column;}
+  .project-plate{padding:56px 0;border-top:1px solid var(--border);}
+  .project-plate:last-child{border-bottom:1px solid var(--border);}
+  .plate-meta{display:flex;align-items:baseline;gap:18px;margin-bottom:22px;flex-wrap:wrap;direction:ltr;}
+  .plate-index{font-family:var(--font-heading);font-size:13px;color:var(--text-soft);}
+  .plate-tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+  .plate-tag.real{color:var(--teal);}
+  .plate-tag.concept{color:var(--text-soft);}
+  .project-top{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center;}
+  @media(max-width:860px){.project-top{grid-template-columns:1fr;gap:28px;}}
+  .project-media{background:var(--navy-dark);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;order:2;border-radius:16px;}
+  @media(max-width:860px){.project-media{order:1;}}
+  .project-body{order:1;}
+  @media(max-width:860px){.project-body{order:2;}}
+  .project-media img,.project-media video{width:100%;height:100%;object-fit:cover;}
+  .project-media.iframe-embed iframe{position:absolute;top:0;left:0;width:250%;height:250%;transform:scale(.4);transform-origin:top left;border:none;pointer-events:none;background:#fff;}
+  .tag{display:none;} /* legacy pill tag replaced by .plate-tag */
+  .project-body h3{font-size:26px;color:var(--navy);margin-bottom:14px;letter-spacing:-.01em;}
+  .project-body p{font-size:15px;color:var(--text-soft);line-height:1.85;margin-bottom:26px;max-width:460px;}
+  .toggle-case{background:none;color:var(--navy);border:none;border-bottom:1px solid var(--navy);padding:0 0 3px;font-size:13.5px;font-weight:700;cursor:pointer;width:fit-content;font-family:var(--font-body);transition:color .2s,border-color .2s;}
+  .toggle-case:hover{color:var(--teal);border-color:var(--teal);}
+  .case-detail{max-height:0;overflow:hidden;transition:max-height .45s ease;}
+  .case-detail.open{max-height:2600px;}
+  .case-detail-inner{padding:40px 0 8px;margin-top:40px;border-top:1px solid var(--border);display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+  @media(max-width:760px){.case-detail-inner{grid-template-columns:1fr;}}
+  .case-col h4{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--teal);font-weight:800;margin-bottom:10px;}
+  .case-col p{font-size:14px;color:var(--text-soft);line-height:1.75;}
+  .gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:32px 0 0;}
+  @media(max-width:700px){.gallery{grid-template-columns:repeat(3,1fr);}}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:10px;}
+  .mt-lg{margin-top:28px;}
+
+  /* menu items inside case studies */
+  .menu-list{padding-top:36px;}
+  .menu-cats{display:flex;flex-wrap:wrap;gap:22px;margin-bottom:26px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+  .menu-cat-chip{background:none;border:none;padding:0;font-size:12px;color:var(--text-soft);font-weight:700;text-transform:uppercase;letter-spacing:.05em;}
+  .menu-items{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px;}
+  @media(max-width:760px){.menu-items{grid-template-columns:1fr;}}
+  .menu-item{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--border);}
+  .menu-icon{width:52px;height:52px;border-radius:10px;object-fit:cover;flex-shrink:0;}
+  .menu-item-body{flex:1;}
+  .menu-item-name{font-weight:700;font-size:14.5px;color:var(--navy);}
+  .menu-item-desc{font-size:12.5px;color:var(--text-soft);margin:3px 0 6px;line-height:1.6;}
+  .menu-item-price{font-size:13.5px;font-weight:800;color:var(--teal);}
+
+  /* services */
+  .services-list{display:flex;flex-direction:column;}
+  .service-row{display:grid;grid-template-columns:300px 1fr;gap:40px;padding:34px 0;border-top:1px solid var(--border);}
+  .services-list .service-row:last-child{border-bottom:1px solid var(--border);}
+  @media(max-width:700px){.service-row{grid-template-columns:1fr;gap:10px;}}
+  .service-row h3{font-size:19px;color:var(--navy);font-weight:700;}
+  .service-row p{font-size:14.5px;color:var(--text-soft);line-height:1.75;max-width:480px;}
+  .price-band{margin-top:60px;padding-top:44px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:20px;}
+  .price-band .amount{font-family:var(--font-heading);font-size:34px;font-weight:700;color:var(--navy);}
+  .price-band p{color:var(--text-soft);font-size:14px;max-width:420px;line-height:1.75;}
+
+  /* process */
+  .process-list{display:flex;flex-direction:column;}
+  .process-step{display:grid;grid-template-columns:90px 1fr;gap:32px;padding:38px 0;border-top:1px solid var(--border);}
+  .process-list .process-step:last-child{border-bottom:1px solid var(--border);}
+  .step-icon{font-family:var(--font-heading);font-size:36px;font-weight:700;color:var(--seafoam);line-height:1;}
+  .process-step h3{font-size:18.5px;color:var(--navy);margin-bottom:10px;font-weight:700;}
+  .process-step p{font-size:14.5px;color:var(--text-soft);line-height:1.8;max-width:560px;}
+
+  /* contact */
+  .contact-card{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-top:48px;border-top:1px solid var(--border);}
+  @media(max-width:700px){.contact-card{grid-template-columns:1fr;}}
+  .contact-photo{display:none;}
+  .contact-brand{display:none;}
+  .contact-info h3{font-size:22px;margin-bottom:10px;color:var(--navy);font-weight:700;}
+  .contact-info .role{color:var(--text-soft);font-size:15px;line-height:1.7;font-weight:400;margin-bottom:0;max-width:380px;}
+  .contact-links{display:flex;flex-direction:column;gap:4px;align-items:flex-start;}
+  .contact-links a{background:none;border:none;width:auto;height:auto;color:var(--navy);display:flex;align-items:center;gap:12px;font-size:15px;font-weight:600;padding:10px 0;border-bottom:1px solid var(--border);width:100%;transition:color .2s,padding-inline-start .2s;}
+  .contact-links a:hover{color:var(--teal);padding-inline-start:6px;}
+  .footer-icon{width:auto;height:auto;border-radius:0;border:none;display:inline-flex;align-items:center;color:var(--text-soft);transition:color .2s;}
+  .footer-icon:hover{background:none;border-color:transparent;color:var(--navy);}
+
+  footer{padding:44px 6vw;text-align:center;color:var(--text-soft);font-size:13px;}
+  footer .logo{justify-content:center;}
+
+  /* start working together CTA */
+  .cta-section{background:var(--navy);position:relative;overflow:hidden;padding:130px 0;}
+  .cta-inner{position:relative;text-align:center;max-width:600px;margin:0 auto;display:flex;flex-direction:column;align-items:center;}
+  .cta-inner .eyebrow{color:var(--seafoam);}
+  .cta-inner h2{font-size:clamp(28px,3.6vw,42px);color:#fff;margin-bottom:20px;font-weight:700;letter-spacing:-.01em;}
+  .cta-inner p{color:#B9CBD4;font-size:15.5px;line-height:1.8;margin-bottom:46px;}
+  .whatsapp-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#25D366;color:#fff;padding:16px 34px;border-radius:50px;font-weight:700;font-size:15px;transition:opacity .2s;margin:0 auto;}
+  .whatsapp-btn:hover{opacity:.88;}
+  .whatsapp-btn svg{width:22px;height:22px;flex-shrink:0;}
+  .whatsapp-btn.whatsapp-btn-sm{padding:13px 24px;font-size:14px;margin:0;}
+  .whatsapp-btn.whatsapp-btn-sm svg{width:18px;height:18px;}
+  .cta-number{margin-top:24px;color:#7E97A3;font-size:13.5px;font-weight:600;letter-spacing:.03em;direction:ltr;display:inline-block;}
+</style>
+</head>
+<body class="lang-ar">
+
+<div id="loadingScreen">
+  <div class="logo loading-logo">Nas<span class="i-wrap"><span class="stem"></span><span class="bubble"></span></span>m<span class="breeze"><svg viewBox="0 0 22 14" xmlns="http://www.w3.org/2000/svg"><path d="M1 4 Q7 1 13 4"/><path d="M1 7 Q9 4 17 7"/><path d="M1 10 Q6 7.5 11 10"/></svg></span></div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-left">
+      <button class="lang-btn" id="langToggle">English</button>
+      <div class="logo">Nas<span class="i-wrap"><span class="stem"></span><span class="bubble"></span></span>m<span class="breeze"><svg viewBox="0 0 22 14" xmlns="http://www.w3.org/2000/svg"><path d="M1 4 Q7 1 13 4"/><path d="M1 7 Q9 4 17 7"/><path d="M1 10 Q6 7.5 11 10"/></svg></span></div>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#work" data-i18n="nav_work">أعمالنا</a>
+      <a href="#services" data-i18n="nav_services">الخدمات</a>
+      <a href="#process" data-i18n="nav_process">طريقة العمل</a>
+      <a href="#start-working" data-i18n="nav_contact">تواصل معنا</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="aurora-bg"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="hero-kicker" data-i18n="hero_kicker">Nasim — Web Design Studio</span>
+      <h1><span data-i18n="hero_title">مواقع أنيقة تُبنى بلمسة </span><span class="accent" data-i18n="hero_title_span">نسيم</span></h1>
+      <p data-i18n="hero_sub">نصمم مواقع سريعة وأنيقة للمقاهي والمطاعم والفنادق الصغيرة، تجعل عملاءك ينجذبون إليك من أول لمسة.</p>
+      <div class="cta-row">
+        <a href="#work" class="btn-primary" data-i18n="hero_cta1">شاهد أعمالنا</a>
+        <a href="https://wa.me/905413299837" target="_blank" class="whatsapp-btn whatsapp-btn-sm" id="heroWaBtn">
+          <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.29.62 4.44 1.7 6.29L3 29l7.4-2.15a12.44 12.44 0 0 0 5.6 1.35h.001c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.79h-.001a10.28 10.28 0 0 1-5.24-1.44l-.376-.223-4.393 1.276 1.298-4.283-.245-.44a10.22 10.22 0 0 1-1.564-5.48c0-5.68 4.62-10.3 10.302-10.3 2.752 0 5.34 1.073 7.286 3.02a10.234 10.234 0 0 1 3.017 7.29c0 5.68-4.62 10.3-10.084 10.3zm5.646-7.71c-.31-.155-1.832-.904-2.116-1.008-.284-.104-.49-.155-.696.156-.207.31-.797 1.007-.977 1.214-.18.207-.36.233-.67.078-.31-.156-1.31-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.148-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.156-.696-1.68-.955-2.3-.252-.605-.508-.523-.696-.533l-.593-.01c-.207 0-.543.078-.827.388s-1.086 1.06-1.086 2.586 1.112 3 1.267 3.207c.155.207 2.19 3.345 5.31 4.69.742.32 1.32.512 1.771.655.744.237 1.421.204 1.957.124.597-.09 1.832-.75 2.09-1.474.258-.724.258-1.345.18-1.474-.077-.13-.284-.207-.594-.362z"/>
+          </svg>
+          <span data-i18n="hero_cta2">تواصل عبر واتساب</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="background:var(--navy);">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,45 C 220,92 420,4 720,46 C 1020,88 1220,6 1440,44 L1440,100 L0,100 Z" fill="var(--sand)"/></svg>
+</div>
+
+<div class="trust-strip">
+  <div class="trust-item"><span class="dot-mark"></span><span data-i18n="trust1">مواقع ثنائية اللغة: عربي وإنجليزي</span></div>
+  <div class="trust-item"><span class="dot-mark"></span><span data-i18n="trust2">تصميم سريع ومتوافق مع الجوال</span></div>
+  <div class="trust-item"><span class="dot-mark"></span><span data-i18n="trust3">تواصل مباشر عبر واتساب دون وسيط</span></div>
+</div>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="aurora-bg compact ghost"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="work_eyebrow">أعمالنا</span>
+      <h2 class="section-title" data-i18n="work_title">مشاريع حقيقية، ومفاهيم توضح أسلوبنا</h2>
+      <p class="section-sub" data-i18n="work_sub">مشروع منجز فعليًا لعميل حقيقي، إلى جانب مفهومَين تصميميَين يوضحان كيف نتعامل مع قطاع المقاهي والمطاعم.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- PROJECT 1: Karadeniz Kurubuz - REAL -->
+      <div class="project-plate">
+        <div class="plate-meta">
+          <span class="plate-index">01</span>
+          <span class="plate-tag real" data-i18n="tag_real">مشروع حقيقي</span>
+        </div>
+        <div class="project-top">
+          <div class="project-body">
+            <h3>Karadeniz Kurubuz</h3>
+            <p data-i18n="kdk_intro">شركة تركية متخصصة في إنتاج وتوريد الثلج الجاف للقطاعات الصناعية والطبية والفعاليات، مقرها طرابزون. لم يكن لديهم أي موقع إلكتروني قبل هذا المشروع.</p>
+            <button class="toggle-case" data-target="case1" data-i18n="view_case">عرض تفاصيل المشروع</button>
+          </div>
+          <div class="project-media">
+            <video id="kdkVideo" muted loop playsinline preload="none" poster="https://karadenizkurubuz.com/assets/images/logo1.jpeg"></video>
+          </div>
+        </div>
+        <div class="case-detail" id="case1">
+          <div class="case-detail-inner">
+            <div class="case-col">
+              <h4 data-i18n="case_problem">المشكلة</h4>
+              <p data-i18n="kdk_problem">العميل لم يكن يملك أي حضور رقمي إطلاقًا — لا موقع، ولا طريقة واضحة يتواصل بها العملاء الجدد معهم أو يفهمون خدماتهم.</p>
+            </div>
+            <div class="case-col">
+              <h4 data-i18n="case_solution">الحل</h4>
+              <p data-i18n="kdk_solution">صممنا لهم موقعًا إلكترونيًا كاملاً من الصفر: صفحة رئيسية توضح المنتجات (بيليت، بلوك، ثلج للفعاليات)، قسم عن استخدامات الثلج الجاف، أسئلة شائعة، ونموذج طلب عرض سعر مباشر عبر واتساب.</p>
+            </div>
+            <div class="case-col">
+              <h4 data-i18n="case_result">النتيجة</h4>
+              <p data-i18n="kdk_result">ظهور احترافي أونلاين، وضوح أكبر لخدماتهم، وقناة تواصل مباشرة أدت إلى مزيد من الاستفسارات والعملاء الجدد.</p>
+            </div>
+          </div>
+          <div class="gallery">
+            <img loading="lazy" decoding="async" src="https://karadenizkurubuz.com/assets/images/prod1.jpeg" alt="product">
+            <img loading="lazy" decoding="async" src="https://karadenizkurubuz.com/assets/images/prod2.jpeg" alt="product">
+            <img loading="lazy" decoding="async" src="https://karadenizkurubuz.com/assets/images/prod3.jpeg" alt="product">
+            <img loading="lazy" decoding="async" src="https://karadenizkurubuz.com/assets/images/p3.jpeg" alt="usage">
+            <img loading="lazy" decoding="async" src="https://karadenizkurubuz.com/assets/images/p6.jpeg" alt="usage">
+          </div>
+          <div class="mt-lg">
+            <a href="https://karadenizkurubuz.com/" target="_blank" class="btn-ghost" data-i18n="visit_live">زيارة الموقع المباشر ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Dar El Kahwa -->
+      <div class="project-plate">
+        <div class="plate-meta">
+          <span class="plate-index">02</span>
+          <span class="plate-tag concept" data-i18n="tag_concept">مفهوم تصميمي</span>
+        </div>
+        <div class="project-top">
+          <div class="project-body">
+            <h3 data-i18n="dek_name">Dar El Kahwa — دار القهوة</h3>
+            <p data-i18n="dek_intro">مفهوم تصميمي لمقهى تونسي صغير — يعرض كيف نبني موقعًا احترافيًا يليق بأجواء المقاهي التونسية التقليدية، بقائمة أسعار وصور توضيحية.</p>
+            <button class="toggle-case" data-target="case2" data-i18n="view_case">عرض تفاصيل المشروع</button>
+          </div>
+          <div class="project-media iframe-embed">
+            <iframe src="https://benaounhazem.github.io/Darkahwa/" loading="lazy" title="Dar El Kahwa"></iframe>
+          </div>
+        </div>
+        <div class="case-detail" id="case2">
+          <div class="case-detail-inner">
+            <div class="case-col">
+              <h4 data-i18n="case_problem">الفكرة</h4>
+              <p data-i18n="dek_problem">مقهى حي صغير في تونس، يريد موقعًا بسيطًا يعرض قائمته وأجواءه ويسهّل على الزبائن الوصول إليه.</p>
+            </div>
+            <div class="case-col">
+              <h4 data-i18n="case_solution">التصميم</h4>
+              <p data-i18n="dek_solution">صفحة واحدة أنيقة الطابع، بقائمة مشروبات ومأكولات واضحة الأسعار، مع تصميم يعكس الطابع التونسي الأصيل.</p>
+            </div>
+            <div class="case-col">
+              <h4 data-i18n="case_result">الهدف</h4>
+              <p data-i18n="dek_result">إظهار كيف يمكن لموقع بسيط أن يمنح مقهى صغيرًا حضورًا رقميًا أنيقًا بأقل تكلفة وأسرع وقت.</p>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="menu-cats">
+              <span class="menu-cat-chip" data-i18n="cat_coffee">قهوة</span>
+              <span class="menu-cat-chip" data-i18n="cat_tea">شاي</span>
+              <span class="menu-cat-chip" data-i18n="cat_juice">عصائر طازجة</span>
+              <span class="menu-cat-chip" data-i18n="cat_pastry">حلويات تونسية</span>
+            </div>
+            <div class="menu-items">
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name" data-i18n="dek_item1_name">قهوة مقهاوجي</div><div class="menu-item-desc" data-i18n="dek_item1_desc">قهوة تونسية تقليدية محمصة بعناية</div><div class="menu-item-price">2.500 TND</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1591299089616-c9604047b1a6?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name" data-i18n="dek_item2_name">شاي بالنعناع والصنوبر</div><div class="menu-item-desc" data-i18n="dek_item2_desc">شاي أخضر طازج بالنعناع البلدي</div><div class="menu-item-price">3.000 TND</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1574810134700-b6ba48d151a0?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name" data-i18n="dek_item3_name">عصير برتقال طازج</div><div class="menu-item-desc" data-i18n="dek_item3_desc">معصور طازجًا يوميًا</div><div class="menu-item-price">6.000 TND</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1574810134700-b6ba48d151a0?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name" data-i18n="dek_item4_name">مقروض بالتمر</div><div class="menu-item-desc" data-i18n="dek_item4_desc">حلوى تونسية أصيلة محشوة بالتمر</div><div class="menu-item-price">3.500 TND</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1506372023823-741c83b836fe?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name" data-i18n="dek_item5_name">بمبالوني</div><div class="menu-item-desc" data-i18n="dek_item5_desc">دونات تونسي طازج، يُقدَّم دافئًا</div><div class="menu-item-price">2.000 TND</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name" data-i18n="dek_item6_name">كابتشينو</div><div class="menu-item-desc" data-i18n="dek_item6_desc">إسبريسو مع رغوة حليب كريمية</div><div class="menu-item-price">5.000 TND</div></div></div>
+            </div>
+          </div>
+          <div class="mt-lg">
+            <a href="https://benaounhazem.github.io/Darkahwa/" target="_blank" class="btn-ghost" data-i18n="visit_live">زيارة الموقع المباشر ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Laitos -->
+      <div class="project-plate">
+        <div class="plate-meta">
+          <span class="plate-index">03</span>
+          <span class="plate-tag concept" data-i18n="tag_concept">مفهوم تصميمي</span>
+        </div>
+        <div class="project-top">
+          <div class="project-body">
+            <h3 data-i18n="laitos_name">Laitos — لايتوس لاونج</h3>
+            <p data-i18n="laitos_intro">مفهوم تصميمي لقائمة طعام رقمية لمطعم/لاونج تركي، يعرض تنظيم قائمة طعام واسعة بشكل أنيق وسهل التصفح.</p>
+            <button class="toggle-case" data-target="case3" data-i18n="view_case">عرض تفاصيل المشروع</button>
+          </div>
+          <div class="project-media iframe-embed">
+            <iframe src="https://benaounhazem.github.io/Laitos/" loading="lazy" title="Laitos Lounge"></iframe>
+          </div>
+        </div>
+        <div class="case-detail" id="case3">
+          <div class="case-detail-inner">
+            <div class="case-col">
+              <h4 data-i18n="case_problem">الفكرة</h4>
+              <p data-i18n="laitos_problem">مطعم/لاونج بقائمة طعام واسعة (أكثر من 25 قسمًا) يحتاج عرضًا رقميًا منظمًا وسهل التصفح من الجوال.</p>
+            </div>
+            <div class="case-col">
+              <h4 data-i18n="case_solution">التصميم</h4>
+              <p data-i18n="laitos_solution">قائمة رقمية مقسّمة بوضوح حسب الفئة، مع أطباق مقترحة، وصف مختصر، وسعر واضح لكل طبق.</p>
+            </div>
+            <div class="case-col">
+              <h4 data-i18n="case_result">الهدف</h4>
+              <p data-i18n="laitos_result">توضيح قدرتنا على تنظيم محتوى كبير ومعقّد (قوائم طعام كاملة) في تجربة نظيفة وسريعة.</p>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="menu-cats">
+              <span class="menu-cat-chip" data-i18n="lcat1">شوربات</span>
+              <span class="menu-cat-chip" data-i18n="lcat2">مقبلات</span>
+              <span class="menu-cat-chip" data-i18n="lcat3">ريزوتو</span>
+              <span class="menu-cat-chip" data-i18n="lcat4">مأكولات بحرية</span>
+              <span class="menu-cat-chip" data-i18n="lcat5">بيتزا</span>
+              <span class="menu-cat-chip" data-i18n="lcat6">حلويات</span>
+              <span class="menu-cat-chip" data-i18n="lcat7">مشروبات</span>
+            </div>
+            <div class="menu-items">
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1542528180-0c79567c66de?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name">Kale Meze</div><div class="menu-item-desc" data-i18n="l_item1_desc">فلفل القلعة الخاص، يقدَّم مع خبز بالثوم وزيت حار-حلو</div><div class="menu-item-price">350 ₺</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1619941862585-cd4fa9a4c2cb?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name">Vişneli Yaprak Sarma</div><div class="menu-item-desc" data-i18n="l_item2_desc">ورق عنب محشو بالكرز، يقدَّم مع زبادي مدخّن</div><div class="menu-item-price">210 ₺</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1764337290548-5e116a0030d0?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name">Çıtır Kadayıflı Jumbo Karides</div><div class="menu-item-desc" data-i18n="l_item3_desc">جمبري ضخم مقرمش بالكادايف مع صلصة المحمرة</div><div class="menu-item-price">650 ₺</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1683824870303-ae378f721084?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name">Çıtır Ravioli</div><div class="menu-item-desc" data-i18n="l_item4_desc">رافيولي مقرمش مع صلصة طماطم وريحان وبارميزان</div><div class="menu-item-price">490 ₺</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name">Risotto di Maria</div><div class="menu-item-desc" data-i18n="l_item5_desc">ريزوتو بالمأكولات البحرية المشكّلة وصلصة الطماطم</div><div class="menu-item-price">780 ₺</div></div></div>
+              <div class="menu-item"><img loading="lazy" decoding="async" class="menu-icon" src="https://images.unsplash.com/photo-1762631934591-8a9bf09e5dfe?w=200&q=80" alt=""><div class="menu-item-body"><div class="menu-item-name">Jumbo Karides Izgara</div><div class="menu-item-desc" data-i18n="l_item6_desc">جمبري ضخم مشوي مع خضار موسمية ورمان وصلصة الخردل</div><div class="menu-item-price">950 ₺</div></div></div>
+            </div>
+          </div>
+          <div class="mt-lg">
+            <a href="https://benaounhazem.github.io/Laitos/" target="_blank" class="btn-ghost" data-i18n="visit_live">زيارة الموقع المباشر ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="background:var(--sand);">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C 220,4 420,94 720,48 C 1020,2 1220,90 1440,50 L1440,100 L0,100 Z" fill="var(--teal-deep)"/></svg>
+</div>
+
+<!-- SERVICES -->
+<section class="section section-teal" id="services">
+  <div class="aurora-bg compact"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="services_eyebrow">الخدمات</span>
+      <h2 class="section-title" data-i18n="services_title">خدمات واضحة، بدون تعقيد</h2>
+      <p class="section-sub" data-i18n="services_sub">نختار عدد قليل من الخدمات ونتقنها، بدلاً من تقديم كل شيء بشكل سطحي.</p>
+    </div>
+    <div class="services-list">
+      <div class="service-row"><h3 data-i18n="s1_title">موقع جديد</h3><p data-i18n="s1_desc">تصميم وبناء موقع كامل من الصفر يناسب طبيعة نشاطك.</p></div>
+      <div class="service-row"><h3 data-i18n="s2_title">إعادة تصميم</h3><p data-i18n="s2_desc">تحديث موقعك الحالي ليصبح أسرع وأكثر احترافية.</p></div>
+      <div class="service-row"><h3 data-i18n="s3_title">موقع ثنائي اللغة</h3><p data-i18n="s3_desc">نسخة عربية وإنجليزية كاملة من موقعك، بتجربة سلسة للطرفين.</p></div>
+      <div class="service-row"><h3 data-i18n="s4_title">تهيئة أساسية لمحركات البحث</h3><p data-i18n="s4_desc">ضبط موقعك ليظهر بشكل أفضل في نتائج البحث المحلية.</p></div>
+      <div class="service-row"><h3 data-i18n="s5_title">صيانة ودعم</h3><p data-i18n="s5_desc">تحديثات ومتابعة دورية بعد إطلاق الموقع.</p></div>
+    </div>
+    <div class="price-band">
+      <div><span class="amount">200 – 400 OMR</span></div>
+      <p data-i18n="price_note">السعر يعتمد على حجم المشروع وعدد الصفحات واللغات — عرض السعر النهائي بعد معرفة تفاصيل نشاطك.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="background:var(--teal-deep);">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,48 C 220,96 420,2 720,44 C 1020,86 1220,8 1440,46 L1440,100 L0,100 Z" fill="var(--seafoam-tint)"/></svg>
+</div>
+
+<!-- PROCESS -->
+<section class="section section-seafoamtint" id="process">
+  <div class="aurora-bg compact ghost"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="process_eyebrow">طريقة العمل</span>
+      <h2 class="section-title" data-i18n="process_title">نبني موقعك مثل بيت دافئ، خطوة بخطوة</h2>
+      <p class="section-sub" data-i18n="process_sub">تخيّل الأمر وكأننا نبني كوخًا دافئًا معًا — نحن شريكك في هذه الرحلة، لا مجرد مصمم.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-step">
+        <div class="step-icon">01</div>
+        <div><h3 data-i18n="p1_title">نضع الأساس معًا</h3><p data-i18n="p1_desc">نجلس ونتحدث عن نشاطك، عملائك، وما تحتاجه فعلاً — كصديقين يخططان قبل البناء.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">02</div>
+        <div><h3 data-i18n="p2_title">نبني الجدران</h3><p data-i18n="p2_desc">نصمم الشكل العام والألوان والمحتوى، ونشاركك كل خطوة لتشعر أن البيت يُبنى بذوقك أنت.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">03</div>
+        <div><h3 data-i18n="p3_title">نضع السقف</h3><p data-i18n="p3_desc">نكمل بناء الموقع بالكامل ونختبره على كل الأجهزة قبل أن نفتح لك الباب.</p></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">04</div>
+        <div><h3 data-i18n="p4_title">نفتح الباب</h3><p data-i18n="p4_desc">إطلاق الموقع رسميًا، ومتابعتنا معك حتى بعد الافتتاح — البيت يبقى بيتك، ونحن دائمًا بجانبك.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="background:var(--seafoam-tint);">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,46 C 220,0 420,92 720,48 C 1020,4 1220,90 1440,48 L1440,100 L0,100 Z" fill="var(--navy)"/></svg>
+</div>
+
+<!-- START WORKING TOGETHER -->
+<section class="cta-section" id="start-working">
+  <div class="aurora-bg compact"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="wrap">
+    <div class="cta-inner">
+      <span class="eyebrow" data-i18n="cta_eyebrow">لنبدأ العمل معًا</span>
+      <h2 data-i18n="cta_title">جاهز تبني حضورك الرقمي؟</h2>
+      <p data-i18n="cta_sub">راسلونا الآن على واتساب، ونبدأ بالتخطيط لموقعك خطوة بخطوة — بدون التزام، فقط محادثة بسيطة.</p>
+      <a href="https://wa.me/905413299837" target="_blank" class="whatsapp-btn" id="ctaWaBtn">
+        <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.29.62 4.44 1.7 6.29L3 29l7.4-2.15a12.44 12.44 0 0 0 5.6 1.35h.001c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.79h-.001a10.28 10.28 0 0 1-5.24-1.44l-.376-.223-4.393 1.276 1.298-4.283-.245-.44a10.22 10.22 0 0 1-1.564-5.48c0-5.68 4.62-10.3 10.302-10.3 2.752 0 5.34 1.073 7.286 3.02a10.234 10.234 0 0 1 3.017 7.29c0 5.68-4.62 10.3-10.084 10.3zm5.646-7.71c-.31-.155-1.832-.904-2.116-1.008-.284-.104-.49-.155-.696.156-.207.31-.797 1.007-.977 1.214-.18.207-.36.233-.67.078-.31-.156-1.31-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.148-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.156-.696-1.68-.955-2.3-.252-.605-.508-.523-.696-.533l-.593-.01c-.207 0-.543.078-.827.388s-1.086 1.06-1.086 2.586 1.112 3 1.267 3.207c.155.207 2.19 3.345 5.31 4.69.742.32 1.32.512 1.771.655.744.237 1.421.204 1.957.124.597-.09 1.832-.75 2.09-1.474.258-.724.258-1.345.18-1.474-.077-.13-.284-.207-.594-.362z"/>
+        </svg>
+        <span data-i18n="cta_btn">تواصل عبر واتساب</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="background:var(--navy);">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,44 C 220,90 420,6 720,46 C 1020,86 1220,8 1440,48 L1440,100 L0,100 Z" fill="var(--teal-deep)"/></svg>
+</div>
+
+<!-- CONTACT -->
+<section class="section section-teal" id="contact">
+  <div class="aurora-bg compact"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="contact_eyebrow">تواصل معنا</span>
+      <h2 class="section-title" data-i18n="contact_title">لنبدأ ببناء موقعك</h2>
+    </div>
+    <div class="contact-card">
+      <div class="contact-info">
+        <h3 data-i18n="contact_name">نسيم</h3>
+        <p class="role" data-i18n="contact_role">تصميم مواقع احترافية للمقاهي والمطاعم والفنادق الصغيرة</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://wa.me/905413299837" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.29.62 4.44 1.7 6.29L3 29l7.4-2.15a12.44 12.44 0 0 0 5.6 1.35h.001c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.79h-.001a10.28 10.28 0 0 1-5.24-1.44l-.376-.223-4.393 1.276 1.298-4.283-.245-.44a10.22 10.22 0 0 1-1.564-5.48c0-5.68 4.62-10.3 10.302-10.3 2.752 0 5.34 1.073 7.286 3.02a10.234 10.234 0 0 1 3.017 7.29c0 5.68-4.62 10.3-10.084 10.3zm5.646-7.71c-.31-.155-1.832-.904-2.116-1.008-.284-.104-.49-.155-.696.156-.207.31-.797 1.007-.977 1.214-.18.207-.36.233-.67.078-.31-.156-1.31-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.148-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.156-.696-1.68-.955-2.3-.252-.605-.508-.523-.696-.533l-.593-.01c-.207 0-.543.078-.827.388s-1.086 1.06-1.086 2.586 1.112 3 1.267 3.207c.155.207 2.19 3.345 5.31 4.69.742.32 1.32.512 1.771.655.744.237 1.421.204 1.957.124.597-.09 1.832-.75 2.09-1.474.258-.724.258-1.345.18-1.474-.077-.13-.284-.207-.594-.362z"/></svg>
+          <span style="direction:ltr;">+90 541 329 98 37</span>
+        </a>
+        <a href="https://www.instagram.com/nasim_agency" target="_blank" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          <span style="direction:ltr;">@nasim_agency</span>
+        </a>
+        <a href="mailto:nasim.contacting@gmail.com" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+          <span style="direction:ltr;">nasim.contacting@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" style="background:var(--teal-deep);">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,48 C 220,2 420,92 720,46 C 1020,0 1220,88 1440,46 L1440,100 L0,100 Z" fill="var(--sand)"/></svg>
+</div>
+
+<footer>
+  <div class="logo" style="justify-content:center;margin-bottom:10px;color:var(--navy);">Nas<span class="i-wrap"><span class="stem"></span><span class="bubble"></span></span>m</div>
+  <div style="margin-bottom:16px;" data-i18n="footer_note">نسيم — مواقع احترافية للأعمال الصغيرة</div>
+  <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;font-size:13.5px;font-weight:600;color:var(--text-soft);margin-bottom:18px;direction:ltr;">
+    <span>+90 541 329 98 37</span>
+    <span>nasim.contacting@gmail.com</span>
+  </div>
+  <div style="display:flex;justify-content:center;gap:14px;">
+    <a href="https://wa.me/905413299837" target="_blank" title="WhatsApp" aria-label="WhatsApp" class="footer-icon">
+      <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.29.62 4.44 1.7 6.29L3 29l7.4-2.15a12.44 12.44 0 0 0 5.6 1.35h.001c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.79h-.001a10.28 10.28 0 0 1-5.24-1.44l-.376-.223-4.393 1.276 1.298-4.283-.245-.44a10.22 10.22 0 0 1-1.564-5.48c0-5.68 4.62-10.3 10.302-10.3 2.752 0 5.34 1.073 7.286 3.02a10.234 10.234 0 0 1 3.017 7.29c0 5.68-4.62 10.3-10.084 10.3zm5.646-7.71c-.31-.155-1.832-.904-2.116-1.008-.284-.104-.49-.155-.696.156-.207.31-.797 1.007-.977 1.214-.18.207-.36.233-.67.078-.31-.156-1.31-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.148-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.156-.696-1.68-.955-2.3-.252-.605-.508-.523-.696-.533l-.593-.01c-.207 0-.543.078-.827.388s-1.086 1.06-1.086 2.586 1.112 3 1.267 3.207c.155.207 2.19 3.345 5.31 4.69.742.32 1.32.512 1.771.655.744.237 1.421.204 1.957.124.597-.09 1.832-.75 2.09-1.474.258-.724.258-1.345.18-1.474-.077-.13-.284-.207-.594-.362z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/nasim_agency" target="_blank" title="Instagram" aria-label="Instagram" class="footer-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg" width="17" height="17"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="mailto:nasim.contacting@gmail.com" title="Email" aria-label="Email" class="footer-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script>
+const dict = {
+  intro_tag:{ar:"نماذج من أعمالنا",en:"Examples of our work"}, intro_skip:{ar:"تخطي ↷",en:"Skip ↷"},
+  nav_work:{ar:"أعمالنا",en:"Work"}, nav_services:{ar:"الخدمات",en:"Services"},
+  nav_process:{ar:"طريقة العمل",en:"Process"}, nav_contact:{ar:"تواصل معنا",en:"Contact"},
+  hero_kicker:{ar:"نسيم — استوديو تصميم مواقع",en:"Nasim — Web Design Studio"},
+  hero_title:{ar:"مواقع أنيقة تُبنى بلمسة ",en:"Elegant websites, built with a touch of "},
+  hero_title_span:{ar:"نسيم",en:"Nasim"},
+  hero_sub:{ar:"نصمم مواقع سريعة وأنيقة للمقاهي والمطاعم والفنادق الصغيرة، تجعل عملاءك ينجذبون إليك من أول لمسة.",en:"We design fast, elegant websites for small cafes, restaurants and hotels — the kind that draws your customers in from the very first touch."},
+  hero_cta1:{ar:"شاهد أعمالنا",en:"See the work"}, hero_cta2:{ar:"تواصل عبر واتساب",en:"Chat on WhatsApp"},
+  trust1:{ar:"مواقع ثنائية اللغة: عربي وإنجليزي",en:"Bilingual Arabic / English builds"},
+  trust2:{ar:"تصميم سريع ومتوافق مع الجوال",en:"Fast, mobile-first design"},
+  trust3:{ar:"تواصل مباشر عبر واتساب دون وسيط",en:"Direct WhatsApp contact, no middleman"},
+  work_eyebrow:{ar:"أعمالنا",en:"Work"},
+  work_title:{ar:"مشاريع حقيقية، ومفاهيم توضح أسلوبنا",en:"Real projects, and concepts that show our range"},
+  work_sub:{ar:"مشروع منجز فعليًا لعميل حقيقي، إلى جانب مفهومَين تصميميَين يوضحان كيف نتعامل مع قطاع المقاهي والمطاعم.",en:"One completed project for a real client, plus two design concepts showing how we approach the cafe and restaurant space."},
+  tag_real:{ar:"مشروع حقيقي",en:"Real project"}, tag_concept:{ar:"مفهوم تصميمي",en:"Concept project"},
+  kdk_intro:{ar:"شركة تركية متخصصة في إنتاج وتوريد الثلج الجاف للقطاعات الصناعية والطبية والفعاليات، مقرها طرابزون. لم يكن لديهم أي موقع إلكتروني قبل هذا المشروع.",en:"A Turkish dry ice production and supply company for industrial, medical and event use, based in Trabzon. They had no website before this project."},
+  view_case:{ar:"عرض تفاصيل المشروع",en:"View case study"},
+  case_problem:{ar:"المشكلة",en:"Problem"}, case_solution:{ar:"الحل",en:"Solution"}, case_result:{ar:"النتيجة",en:"Result"},
+  kdk_problem:{ar:"العميل لم يكن يملك أي حضور رقمي إطلاقًا — لا موقع، ولا طريقة واضحة يتواصل بها العملاء الجدد معهم أو يفهمون خدماتهم.",en:"The client had zero digital presence — no website, and no clear way for new customers to reach them or understand their services."},
+  kdk_solution:{ar:"صممنا لهم موقعًا إلكترونيًا كاملاً من الصفر: صفحة رئيسية توضح المنتجات (بيليت، بلوك، ثلج للفعاليات)، قسم عن استخدامات الثلج الجاف، أسئلة شائعة، ونموذج طلب عرض سعر مباشر عبر واتساب.",en:"We designed a full website from scratch: a homepage showcasing their products (pellet, block, event-grade ice), a use-cases section, an FAQ, and a direct WhatsApp quote-request form."},
+  kdk_result:{ar:"ظهور احترافي أونلاين، وضوح أكبر لخدماتهم، وقناة تواصل مباشرة أدت إلى مزيد من الاستفسارات والعملاء الجدد.",en:"A professional online presence, much clearer service communication, and a direct contact channel that led to more inquiries and new clients."},
+  visit_live:{ar:"زيارة الموقع المباشر ↗",en:"Visit live site ↗"},
+  dek_name:{ar:"Dar El Kahwa — دار القهوة",en:"Dar El Kahwa"},
+  dek_intro:{ar:"مفهوم تصميمي لمقهى تونسي صغير — يعرض كيف نبني موقعًا احترافيًا يليق بأجواء المقاهي التونسية التقليدية، بقائمة أسعار وصور توضيحية.",en:"A design concept for a small Tunisian cafe — showing how we'd build a professional site that fits traditional Tunisian cafe atmosphere, with a full priced menu."},
+  dek_problem:{ar:"مقهى حي صغير في تونس، يريد موقعًا بسيطًا يعرض قائمته وأجواءه ويسهّل على الزبائن الوصول إليه.",en:"A small neighborhood cafe in Tunisia wants a simple site that shows its menu and atmosphere, and makes it easy for customers to find."},
+  dek_solution:{ar:"صفحة واحدة أنيقة الطابع، بقائمة مشروبات ومأكولات واضحة الأسعار، مع تصميم يعكس الطابع التونسي الأصيل.",en:"A single elegant page with a clearly priced food and drink menu, in a design that reflects authentic Tunisian character."},
+  dek_result:{ar:"إظهار كيف يمكن لموقع بسيط أن يمنح مقهى صغيرًا حضورًا رقميًا أنيقًا بأقل تكلفة وأسرع وقت.",en:"Shows how a simple site can give a small cafe an elegant digital presence, quickly and affordably."},
+  cat_coffee:{ar:"قهوة",en:"Coffee"}, cat_tea:{ar:"شاي",en:"Tea"}, cat_juice:{ar:"عصائر طازجة",en:"Fresh Juice"}, cat_pastry:{ar:"حلويات تونسية",en:"Tunisian Pastry"},
+  dek_item1_name:{ar:"قهوة مقهاوجي",en:"Maghaoui Coffee"}, dek_item1_desc:{ar:"قهوة تونسية تقليدية محمصة بعناية",en:"Traditional Tunisian coffee, carefully roasted"},
+  dek_item2_name:{ar:"شاي بالنعناع والصنوبر",en:"Mint Tea with Pine Nuts"}, dek_item2_desc:{ar:"شاي أخضر طازج بالنعناع البلدي",en:"Fresh green tea with local mint"},
+  dek_item3_name:{ar:"عصير برتقال طازج",en:"Fresh Orange Juice"}, dek_item3_desc:{ar:"معصور طازجًا يوميًا",en:"Freshly squeezed daily"},
+  dek_item4_name:{ar:"مقروض بالتمر",en:"Date Makroudh"}, dek_item4_desc:{ar:"حلوى تونسية أصيلة محشوة بالتمر",en:"Authentic Tunisian pastry filled with dates"},
+  dek_item5_name:{ar:"بمبالوني",en:"Bambalouni"}, dek_item5_desc:{ar:"دونات تونسي طازج، يُقدَّم دافئًا",en:"Fresh Tunisian donut, served warm"},
+  dek_item6_name:{ar:"كابتشينو",en:"Cappuccino"}, dek_item6_desc:{ar:"إسبريسو مع رغوة حليب كريمية",en:"Espresso with creamy milk foam"},
+  laitos_name:{ar:"Laitos — لايتوس لاونج",en:"Laitos Lounge"},
+  laitos_intro:{ar:"مفهوم تصميمي لقائمة طعام رقمية لمطعم/لاونج تركي، يعرض تنظيم قائمة طعام واسعة بشكل أنيق وسهل التصفح.",en:"A design concept for a digital menu for a Turkish restaurant/lounge, showing how a large menu can be organized elegantly and browsed easily."},
+  laitos_problem:{ar:"مطعم/لاونج بقائمة طعام واسعة (أكثر من 25 قسمًا) يحتاج عرضًا رقميًا منظمًا وسهل التصفح من الجوال.",en:"A restaurant/lounge with a large menu (25+ categories) needs a clean digital presentation that's easy to browse on mobile."},
+  laitos_solution:{ar:"قائمة رقمية مقسّمة بوضوح حسب الفئة، مع أطباق مقترحة، وصف مختصر، وسعر واضح لكل طبق.",en:"A digital menu clearly split by category, with featured dishes, short descriptions and a clear price on every item."},
+  laitos_result:{ar:"توضيح قدرتنا على تنظيم محتوى كبير ومعقّد (قوائم طعام كاملة) في تجربة نظيفة وسريعة.",en:"Demonstrates our ability to organize large, complex content — full restaurant menus — into a clean, fast experience."},
+  lcat1:{ar:"شوربات",en:"Soups"}, lcat2:{ar:"مقبلات",en:"Mezze"}, lcat3:{ar:"ريزوتو",en:"Risotto"}, lcat4:{ar:"مأكولات بحرية",en:"Seafood"}, lcat5:{ar:"بيتزا",en:"Pizza"}, lcat6:{ar:"حلويات",en:"Desserts"}, lcat7:{ar:"مشروبات",en:"Drinks"},
+  l_item1_desc:{ar:"فلفل القلعة الخاص، يقدَّم مع خبز بالثوم وزيت حار-حلو",en:"Signature roasted pepper, served with garlic bread and sweet-spicy oil"},
+  l_item2_desc:{ar:"ورق عنب محشو بالكرز، يقدَّم مع زبادي مدخّن",en:"Cherry-stuffed grape leaves, served with smoked yogurt"},
+  l_item3_desc:{ar:"جمبري ضخم مقرمش بالكادايف مع صلصة المحمرة",en:"Crispy kadayif-wrapped jumbo shrimp with muhammara sauce"},
+  l_item4_desc:{ar:"رافيولي مقرمش مع صلصة طماطم وريحان وبارميزان",en:"Crispy ravioli with San Marzano tomato, basil and parmesan"},
+  l_item5_desc:{ar:"ريزوتو بالمأكولات البحرية المشكّلة وصلصة الطماطم",en:"Risotto with mixed seafood and tomato sauce"},
+  l_item6_desc:{ar:"جمبري ضخم مشوي مع خضار موسمية ورمان وصلصة الخردل",en:"Grilled jumbo shrimp with seasonal greens, pomegranate and mustard sauce"},
+  services_eyebrow:{ar:"الخدمات",en:"Services"},
+  services_title:{ar:"خدمات واضحة، بدون تعقيد",en:"Clear services, no clutter"},
+  services_sub:{ar:"نختار عدد قليل من الخدمات ونتقنها، بدلاً من تقديم كل شيء بشكل سطحي.",en:"A focused set of services, done properly, rather than everything done half-way."},
+  s1_title:{ar:"موقع جديد",en:"New Website"}, s1_desc:{ar:"تصميم وبناء موقع كامل من الصفر يناسب طبيعة نشاطك.",en:"A full website designed and built from scratch, fitted to your business."},
+  s2_title:{ar:"إعادة تصميم",en:"Redesign"}, s2_desc:{ar:"تحديث موقعك الحالي ليصبح أسرع وأكثر احترافية.",en:"Refresh your existing site to be faster and more professional."},
+  s3_title:{ar:"موقع ثنائي اللغة",en:"Bilingual Website"}, s3_desc:{ar:"نسخة عربية وإنجليزية كاملة من موقعك، بتجربة سلسة للطرفين.",en:"A full Arabic and English version of your site, with a smooth experience in both."},
+  s4_title:{ar:"تهيئة أساسية لمحركات البحث",en:"Basic SEO Setup"}, s4_desc:{ar:"ضبط موقعك ليظهر بشكل أفضل في نتائج البحث المحلية.",en:"Setting your site up to rank better in local search results."},
+  s5_title:{ar:"صيانة ودعم",en:"Maintenance & Support"}, s5_desc:{ar:"تحديثات ومتابعة دورية بعد إطلاق الموقع.",en:"Ongoing updates and support after your site goes live."},
+  price_note:{ar:"السعر يعتمد على حجم المشروع وعدد الصفحات واللغات — عرض السعر النهائي بعد معرفة تفاصيل نشاطك.",en:"Final price depends on project size, number of pages and languages — a firm quote follows once we know your business details."},
+  process_eyebrow:{ar:"طريقة العمل",en:"Process"},
+  process_title:{ar:"نبني موقعك مثل بيت دافئ، خطوة بخطوة",en:"We build your site like a warm home, step by step"},
+  process_sub:{ar:"تخيّل الأمر وكأننا نبني كوخًا دافئًا معًا — نحن شريكك في هذه الرحلة، لا مجرد مصمم.",en:"Think of it like building a warm little hut together — we're your partner in this, not just a design service."},
+  p1_title:{ar:"نضع الأساس معًا",en:"Laying the foundation"}, p1_desc:{ar:"نجلس ونتحدث عن نشاطك، عملائك، وما تحتاجه فعلاً — كصديقين يخططان قبل البناء.",en:"We sit down and talk about your business, your customers, and what you actually need — like two friends planning before building."},
+  p2_title:{ar:"نبني الجدران",en:"Building the walls"}, p2_desc:{ar:"نصمم الشكل العام والألوان والمحتوى، ونشاركك كل خطوة لتشعر أن البيت يُبنى بذوقك أنت.",en:"We design the look, colors and content, sharing every step so it feels like the home is being built to your taste."},
+  p3_title:{ar:"نضع السقف",en:"Putting on the roof"}, p3_desc:{ar:"نكمل بناء الموقع بالكامل ونختبره على كل الأجهزة قبل أن نفتح لك الباب.",en:"We finish building the full site and test it on every device before opening the door to you."},
+  p4_title:{ar:"نفتح الباب",en:"Opening the door"}, p4_desc:{ar:"إطلاق الموقع رسميًا، ومتابعتنا معك حتى بعد الافتتاح — البيت يبقى بيتك، ونحن دائمًا بجانبك.",en:"The official launch, and we stay with you after opening too — the home stays yours, and we're always nearby."},
+  cta_eyebrow:{ar:"لنبدأ العمل معًا",en:"Let's Start Working Together"},
+  cta_title:{ar:"جاهز تبني حضورك الرقمي؟",en:"Ready to build your digital presence?"},
+  cta_sub:{ar:"راسلونا الآن على واتساب، ونبدأ بالتخطيط لموقعك خطوة بخطوة — بدون التزام، فقط محادثة بسيطة.",en:"Message us on WhatsApp and let's start planning your site step by step — no commitment, just a simple chat."},
+  cta_btn:{ar:"تواصل عبر واتساب",en:"Message on WhatsApp"},
+  contact_eyebrow:{ar:"تواصل معنا",en:"Contact"},
+  contact_title:{ar:"لنبدأ ببناء موقعك",en:"Let's start building your site"},
+  contact_name:{ar:"نسيم",en:"Nasim"},
+  contact_role:{ar:"تصميم مواقع احترافية للمقاهي والمطاعم والفنادق الصغيرة",en:"Professional web design for small cafes, restaurants & hotels"},
+  footer_note:{ar:"نسيم — مواقع احترافية للأعمال الصغيرة",en:"Nasim — professional websites for small businesses"}
+};
+
+let currentLang = 'ar';
+const waMessages = {
+  ar: "ابدأ ببناء مشروعك مع نسيم",
+  en: "Start building your project with Nasim"
+};
+function updateWaLinks(lang){
+  const text = encodeURIComponent(waMessages[lang]);
+  const url = 'https://wa.me/905413299837?text=' + text;
+  const heroBtn = document.getElementById('heroWaBtn');
+  const ctaBtn = document.getElementById('ctaWaBtn');
+  if(heroBtn) heroBtn.href = url;
+  if(ctaBtn) ctaBtn.href = url;
+}
+function applyLang(lang){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(dict[key]) el.textContent = dict[key][lang];
+  });
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.body.classList.toggle('lang-en', lang === 'en');
+  document.getElementById('langToggle').textContent = lang === 'ar' ? 'English' : 'العربية';
+  updateWaLinks(lang);
+  currentLang = lang;
+}
+applyLang('ar');
+document.getElementById('langToggle').addEventListener('click', ()=> applyLang(currentLang === 'ar' ? 'en' : 'ar'));
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navLinks = document.getElementById('navLinks');
+hamburgerBtn.addEventListener('click', ()=> navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> navLinks.classList.remove('open')));
+
+document.querySelectorAll('.toggle-case').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = document.getElementById(btn.getAttribute('data-target'));
+    target.classList.toggle('open');
+  });
+});
+
+// scrollspy: auto-highlight the nav link matching the section currently in view
+const sectionIds = ['work','services','process','start-working'];
+const navLinkMap = {};
+sectionIds.forEach(id=>{
+  const link = document.querySelector('.nav-links a[href="#'+id+'"]');
+  if(link) navLinkMap[id] = link;
+});
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      Object.values(navLinkMap).forEach(l=>l.classList.remove('active'));
+      const activeLink = navLinkMap[entry.target.id];
+      if(activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+sectionIds.forEach(id=>{
+  const el = document.getElementById(id);
+  if(el) observer.observe(el);
+});
+
+// lazy-load & autoplay the product video only once it's actually visible
+const kdkVideo = document.getElementById('kdkVideo');
+if(kdkVideo){
+  const videoObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        if(!kdkVideo.src && !kdkVideo.querySelector('source[data-loaded]')){
+          const src = document.createElement('source');
+          src.src = 'https://karadenizkurubuz.com/assets/videos/product-demo.mp4';
+          src.type = 'video/mp4';
+          src.setAttribute('data-loaded','1');
+          kdkVideo.appendChild(src);
+          kdkVideo.load();
+        }
+        kdkVideo.play().catch(()=>{});
+        videoObserver.unobserve(kdkVideo);
+      }
+    });
+  }, { rootMargin: '200px 0px', threshold: 0 });
+  videoObserver.observe(kdkVideo);
+}
+
+// loading screen: show while the page settles, hide once ready (with a sensible minimum + max wait)
+const loadingScreen = document.getElementById('loadingScreen');
+if(loadingScreen){
+  document.body.style.overflow = 'hidden';
+  const MIN_MS = 1100;
+  const MAX_MS = 3000;
+  const startTime = Date.now();
+  let hidden = false;
+  function hideLoadingScreen(){
+    if(hidden) return;
+    hidden = true;
+    const elapsed = Date.now() - startTime;
+    const wait = Math.max(0, MIN_MS - elapsed);
+    setTimeout(()=>{
+      loadingScreen.classList.add('hide');
+      document.body.style.overflow = '';
+      setTimeout(()=> loadingScreen.remove(), 650);
+    }, wait);
+  }
+  if(document.readyState === 'complete'){
+    hideLoadingScreen();
+  } else {
+    window.addEventListener('load', hideLoadingScreen);
+  }
+  setTimeout(hideLoadingScreen, MAX_MS);
+}
+</script>
+
+</body>
+</html>
